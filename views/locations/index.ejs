@@ -1,16 +1,22 @@
 <!-- layout(view): Output of the template passed to the view as "body"-->
 <% layout('layouts/boilerplate')%>
-  <h1>All Locations</h1>
-  <div>
-    <a href="/locations/new">Add Location</a>
+<div class="container">
+  <div class="mb-4" style="text-align: center;">
+    <h1 class="mb-0">ALL LOCATIONS</h1>
+    <p class="text-muted">Location Information and Reviews</p>
   </div>
-
   <% for (let location of locations){%>
-    <div class="card" mb-3>
+    <div class="card mb-3">
       <div class="row">
+
         <div class="col-md-4">
-          <img class="img-fluid" alt="" src="<%=location.image%>" />
-        </div>
+          <%if(location.images.length) {%>
+          <img class="img-fluid w-100 h-100" alt="" src="<%=location.images[0].url%>" style="object-fit:cover" crossorigin>
+          <% }else {%>
+          <img class="img-fluid" alt="" 
+              src="https://res.cloudinary.com/dmwyfv3yb/image/upload/v1663179343/StudySpots/dqziy4scolmrnckpoew6.jpg" crossorigin>
+          <% } %>
+      </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">
@@ -29,6 +35,8 @@
             </a>
           </div>
         </div>
+
       </div>
     </div>
-    <% }%>
+  <% }%>
+</div>

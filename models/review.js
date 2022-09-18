@@ -5,6 +5,10 @@ const Schema = mongoose.Schema;
 const reviewSchema = new Schema({
   body: String,
   rating: Number,
+  author: { //associate author's user account with review
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  }
 });
 
 module.exports = mongoose.model("Review", reviewSchema);

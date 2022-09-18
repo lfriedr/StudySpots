@@ -1,0 +1,28 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box {
+  background-color: rgba(238, 238, 238, 0.568);
+  width: 80%;
+  margin: 0% 10%; 
+  padding: 2%;  
+}
+
+.cnvrtSelects {
+  margin: 2% 0%;
+}
+.cnvrtOuts {
+  margin: 1% 0%;
+}
+.gradeInputs {
+  margin: 2% 0%;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

@@ -1,5 +1,7 @@
 (function () {
   "use strict";
+  // for file upload
+  bsCustomFileInput.init()
   // fetch forms that need custom validation styles
   const forms = document.querySelectorAll(".validated-form");
   // loop through forms & prevent submission if invalid
