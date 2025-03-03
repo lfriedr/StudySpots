@@ -1,6 +1,6 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark custom-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Study Spots</a>
+    <a class="navbar-brand" href="/">StudySpots</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -14,7 +14,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <!-- <a class="nav-link" href="/">Home</a> -->
         <a class="nav-link" href="/locations">Locations</a>
         <a class="nav-link" href="/locations/new">New Location</a>
         <a class="nav-link" href="/eecs">Study Help</a>
@@ -31,5 +30,34 @@
     </div>
   </div>
 </nav>
-<img src="https://images.unsplash.com/photo-1647731970799-aa3345b7002b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="" 
-style="box-sizing: content-box; margin-bottom: 3%; transform: scale(1.4); width: 100%; height: 150px; object-fit: cover;">
+
+<img src="/images/johnny-johnson-ewWv2ehtjds-unsplash.jpg" alt="Study Spots Banner" class="hero-img">
+<!-- <img src="https://images.unsplash.com/photo-1647731970799-aa3345b7002b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" 
+alt="Study Spots Banner" class="hero-img"> -->
+
+<style>
+  .custom-navbar {
+    background-color: #212121 !important;
+    padding: .7rem 0;
+    font-size: 1.1rem;
+  }
+  .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.7rem 1.2rem;
+    transition: color 0.3s ease-in-out;
+  }
+  .navbar-nav .btn {
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+  .hero-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    display: block;
+  }
+</style>
